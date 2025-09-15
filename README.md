@@ -24,17 +24,41 @@ poetry install
 ```
 
 3. Activate the virtual environment:
+- Poetry 1.x
 ```bash
 poetry shell
 ```
+- Poetry 2.x
+```bash
+poetry env activate
+```
+This will print the activation command for the virtual environment.  
+
+**Example (Windows PowerShell):**
+```powershell
+& "C:\Users\<your-user>\AppData\Local\pypoetry\Cache\virtualenvs\oecd-demo-xxxx\Scripts\activate.ps1"
+```
+**Example (Unix/MacOS):**
+```bash
+source ~/path/to/your/virtualenv/bin/activate
+```
+
+
+
+    
 
 ## Usage
 
 ### Running the Jupyter Notebook
 
 1. Make sure you're in the Poetry virtual environment:
+- Poetry 1.x
 ```bash
 poetry shell
+```
+- Poetry 2.x
+```bash
+poetry env activate
 ```
 
 2. Navigate to the src directory and run Jupyter:
